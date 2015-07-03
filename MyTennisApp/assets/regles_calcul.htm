@@ -1,0 +1,440 @@
+<html>
+<head>
+
+  <style type="text/css" media="screen">
+    <!--
+    
+      #calcul table { border: 2px solid #333; border-collapse: collapse; margin: 1.5em 1em; }
+      #calcul table tr:nth-child(odd)  { background-color: #FFF; }
+      #calcul table tr:nth-child(even) { background-color: #EEE; }
+      #calcul table th { text-align: left; border-bottom: 2px dotted #111; }
+      #calcul table td, table th { border: 1px solid #CCC; padding: 2px 4px; }
+      #calcul table.normes, #calcul table.capital { display: inline-block; margin: 10px 2px; }
+      #calcul table.normes td, #calcul table.capital td { text-align: center; }
+      #calcul table.capital td:nth-child(2) { text-align: right; }
+      #calcul ul { margin: 10px 20px; }
+      #calcul li { list-style: square; margin: 1em 0; }
+      #calcul h4 { font: normal bold 12px georgia; margin-bottom: 1em; color: #111; }
+      #calcul p { text-align: justify; margin-top: .5em; }
+      #columns { margin: 0 auto; }
+      #columns .col { width: 47%; padding: 0 7px; float: left; }
+  
+  
+    -->
+  </style>
+
+</head>
+
+<body>
+  <section id="content">
+     <h2>Règles de calcul du bilan du classement 2011</h2>
+   <div id="calcul">
+
+      <p>Cette section décrit les principes et les règles de calcul du bilan du classement de simple 2010.</p>
+      <p><em>Source :</em> <a href="http://www.fft.fr/sites/default/files/memo-classement-2011.pdf">Memo classement FFT</a></p>
+
+     <h3>Principes du classement de simple</h3>
+
+     <!-- begin #columns -->
+     <div id="columns">
+
+       <div class="col">
+         <h4>1 - Une méthode de calcul unique est appliquée aux 2e, 3e et 4e séries</h4>
+         <p>Tous les joueurs classés en 2e, 3e et 4e séries ainsi que tous les compétiteurs non classés, sont traités dans le calcul du classement.</p>
+
+         <h4>2 - Le classement de la 2e série est un concours</h4>
+         <p>Il est arrêté à l'issue de deux opérations successives, une phase de calcul suivie d'une phase d'harmonisation.<br />En 3e et 4e séries, il n'y a pas d'harmonisation descendante. À l'issue de la phase de calcul, les compétiteurs sont soit confirmés à l'échelon calculé, soit éventuellement harmonisés à l'échelon supérieur (harmonisation montante).</p>
+
+         <h4>3 - Le classement de chaque compétiteur est calculé par étapes successives</h4>
+         <p>Il est calculé en fonction du futur classement de chacun de ses adversaires, et d'après des barèmes et normes fixés chaque année par le Bureau Fédéral sur proposition de la Commission Fédérale de classement.</p>
+
+         <h4>4 - Phases de calcul</h4>
+         <p>À partir de l'année sportive 2011 (calcul du classement intermédiaire de février), pour accéder à l'échelon supérieur il faudra avoir les points de maintien à cet échelon, c'est la seule condition.</p>
+         <p>Le joueur va être proposé à l'échelon le plus haut auquel il peut prétendre, c'est-à-dire au classement de l'adversaire le mieux classé (classement avant le début du calcul) qu'il a battu au cours de l'année + un échelon s'il est en 2e ou 3e série ou deux échelons s'il est en 4e série : c'est ce qui détermine son <em>pmax</em>.</p>
+
+         <p>À chaque passage de l'ordinateur, le joueur sera placé à son pmax et descendra jusqu'à ce qu'il ait le nombre de points nécessaire (normes de maintien) pour être stabilisé à un échelon.</p>
+         <p>Cette nouvelle règle de calcul est plus simple et ne modifiera pas la pyramide du classement.</p>
+
+         <h4>5 - Harmonisation de la 2e série</h4>
+         <p>Le Bureau Fédéral ayant, pour la bonne organisation de la compétition, arrêté a priori la pyramide du classement de la 2e série - c'est-à-dire le nombre de joueuses et de joueurs admis à chaque échelon - la phase d'harmonisation qui intervient après la phase de calcul vise à adapter les classements calculés à la pyramide prévue. A l'issue de la phase de calcul, les compétiteurs sont, à l'intérieur de chaque échelon de la 2e série, classés par ordre de bilans décroissants. L'ordinateur effectue alors des transferts de joueurs d'un échelon à un autre, en commençant par le plus haut (Promotion) de façon à réaliser strictement la pyramide prévue.</p>
+
+       </div>
+       <div class="col">
+
+          <h4>6 - Disposition diverses</h4>
+          <p><strong>Limitation de descente</strong><br />La descente est limitée à un échelon pour tout licencié. Elle est de deux échelons pour les non licenciés et les compétiteurs ayant cinq w.o. et plus.<br /><br />
+          <strong>Mesures de blocage</strong><br />En cas de maternité, les joueuses licenciées peuvent bénéficier d'une mesure de blocage de leur classement.<br /><br />
+          <strong>Bonification au vainqueur de tournoi</strong><br />Le vainqueur d'un tournoi ou d'un championnat ayant rassemblé au minimum 24 participants effectifs pour les épreuves masculines et 12 pour les épreuves féminines, est crédité d'une victoire, à l'échelon (au jour de la rencontre) du joueur le mieux classé ayant effectivement participé et été battu sur le terrain (à l'exception du vainqueur lui-même). Cette disposition ne s'applique ni aux épreuves de consolation, ni aux fins de tableaux intermédiaires. Le nombre de bonus parmi les victoires prises en compte est limité à deux.<br /><br />
+          <strong>Limitation de montée</strong><br />Indépendamment des normes de montée indiquées ci-après, un joueur ne peut monter plus haut qu'un échelon au dessus du meilleur classement de tous ceux qu'il a battus, au jour où ils les a rencontrés ou, <b>si ce meilleur classement est en 4e série, deux échelons au-dessus</b>. S'il n'a battu que des joueurs moins bien classés que lui, il ne pourra alors monter plus haut qu'un échelon au-dessus de son propre classement d'origine ou, <b>si ce dernier est en 4e série, deux échelons au dessus</b>.</p>
+
+
+          <p>Pour les garçons 10, 11 et 12 ans, cette limitation est fixée à l'échelon N du meilleur classement de tous ceux que le joueur a battus au jour où il les a
+            rencontrés, dans le cas où cet échelon est en 3e et 2e séries.
+            Elle est limitée à l'échelon N+1, dans le cas où le meilleur classement de
+            tous ceux qu'il a rencontrés est 30/1 ou 30/2, et N+2 pour un classement à
+            30/3 et en dessous.
+            S'il n'a pas battu de joueurs mieux classés que lui, il ne pourra monter plus
+            haut que :
+            <br />- son classement d'origine, si celui-ci est en 3e ou 2e série,
+            <br />- un échelon au-dessus de son classement d'origine, si celui-ci est 30/1 ou 30/2,
+            <br />- deux échelons au-dessus de son classement d'origine, si celui-ci est 30/3
+            et inférieur.</p>
+
+          <p>Les bonus aux vainqueurs de tournoi ou de championnat ne sont pas pris en compte pour la détermination de ce classement maximal.</p>
+
+          <h4>7 - Reprise de compétition</h4>
+          <p>Tout joueur ou toute joueuse ayant demandé à ne plus figurer au classement officiel de la FFT, ainsi que tout(e) ancien(ne) classé(e) en 3e, 2e ou 1re série a l'obligation, s'il (elle) souhaite ultérieurement reprendre la compétition, de demander au préalable une assimilation à un classement à la Commission fédérale de classement, par l'intermédiaire de sa ligue.</p>
+
+          <h4>8 - Assimilation à un classement</h4>
+          <p>En cours d'année sportive, la Commission fédérale de classement peut, à tout moment, sur demande de sa ligue et sur justificatifs, délivrer à une joueuse ou à un joueur une assimilation à un classement, en précisant sa date d'entrée en vigueur. Ce changement de classement doit être au minimum de trois échelons.</p>
+
+        </div>
+    </div>
+    <!-- end #columns -->
+    <div style="clear:both"></div>
+
+    <!-- section #1 -->
+    <h3>1- Capital de départ</h3>
+      <ul>
+        <li>Un capital de départ est attribué à chaque joueur, en fonction de son classement d'origine, selon le tableau ci-après.</li>
+        <li>Ce nombre de points reste <strong>inchangé</strong> tout au long des différentes étapes du calcul du classement final.</li>
+      </ul>
+
+      <table class="capital">
+        <tr>
+          <th scope="col">Classement</th>
+          <th scope="col">Capital de départ</th>
+        </tr>
+        <tr><td>NC</td><td>0 points</td></tr>
+        <tr><td>40</td><td>2 points</td></tr>
+
+        <tr><td>30/5</td><td>5 points</td></tr>
+        <tr><td>30/4</td><td>10 points</td></tr>
+        <tr><td>30/3</td><td>20 points</td></tr>
+        <tr><td>30/2</td><td>30 points</td></tr>
+        <tr><td>30/1</td><td>50 points</td></tr>
+
+        <tr><td>30</td><td>80 points</td></tr>
+        <tr><td>15/5</td><td>120 points</td></tr>
+        <tr><td>15/4</td><td>160 points</td></tr>
+        <tr><td>15/3</td><td>200 points</td></tr>
+        <tr><td>15/2</td><td>240 points</td></tr>
+
+        <tr><td>15/1</td><td>280 points</td></tr>
+      </table>
+      <table class="capital">
+        <tr>
+          <th scope="col">Classement</th>
+          <th scope="col">Capital de départ</th>
+        </tr>
+
+        <tr><td>15</td><td>330 points</td></tr>
+        <tr><td>5/6</td><td>370 points</td></tr>
+        <tr><td>4/6</td><td>410 points</td></tr>
+        <tr><td>3/6</td><td>450 points</td></tr>
+        <tr><td>2/6</td><td>490 points</td></tr>
+
+        <tr><td>1/6</td><td>530 points</td></tr>
+        <tr><td>0</td><td>570 points</td></tr>
+        <tr><td>-2/6</td><td>620 points</td></tr>
+        <tr><td>-4/6</td><td>660 points</td></tr>
+        <tr><td>-15</td><td>700 points</td></tr>
+
+        <tr><td>-30</td><td>740 points</td></tr>
+        <tr><td>Promotion</td><td>780 points</td></tr>
+        <tr><td>1ère Série</td><td>840 points</td></tr>
+      </table>
+
+    <!-- section #2 -->
+
+    <h3>2- Résultats prises en compte</h3>
+      <ul>
+        <li>Seules les meilleures victoires, en nombre limité, sont prises en compte pour chaque compétiteur.</li>
+        <li>Au nombre minimal de victoires prises en compte viennent éventuellement s'ajouter des victoires supplémentaires.</li>
+      </ul>
+      <p>Le tableau ci-dessous indique, en fonction du classement du compétiteur, le <strong>nombre de victoires prises en compte</strong>. Si un compétiteur a enregistré moins de victoires que ce nombre, toutes ses victoires seront prises en compte.</p>
+
+      <table>
+          <tr>
+            <th scope="col" style="width:50%">Classement</th>
+            <th scope="col">Victoires prises en compte</th>
+          </tr>
+          <tr>
+            <td>NC, 40, 30/5, 30/4</td>
+
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>30/3, 30/2, 30/1, 30, 15/5, 15/4</td>
+            <td>6</td>
+          </tr>
+          <tr>
+
+            <td>15/3, 15/2, 15/1, 15, 5/6, 4/6</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>3/6, 2/6, 1/6</td>
+            <td>8</td>
+          </tr>
+
+          <tr>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>-2/6</td>
+            <td>10</td>
+
+          </tr>
+          <tr>
+            <td>-4/6</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>-15</td>
+
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>-30</td>
+            <td>16</td>
+          </tr>
+          <tr>
+
+            <td>Promotion</td>
+            <td>18</td>
+          </tr>
+      </table>
+      <dl>
+        <dt>Le tableau suivant indique le <b>nombre de victoires supplémentaires</b> (s'ajoutant au nombre minimal ci-dessus), calculé en fonction de la valeur <b>V-E-2I-5G</b> où :</dt>
+
+        <dd>- <strong>V</strong> = nombre de victoires (victoires par w.o. comprises)&nbsp;;</dd>
+        <dd>- <strong>E</strong> = nombre de défaites à échelon égal (défaites par w.o. non comprises)&nbsp;;</dd>
+        <dd>- <strong>I</strong> = nombre de défaites à un échelon inférieur (défaites par w.o. non comprises)&nbsp;;</dd>
+
+        <dd>- <strong>G</strong> = nombre de défaites à deux échelons inférieurs et plus, et par w.o. à partir du 3e.</dd>
+      </dl>
+      <table style="width: 90%">
+        <tr>
+          <td colspan="2" style="width:20%"><b>4e série</b></td>
+          <td colspan="2" style="width:40%"><b>3e série et 2e série positive</b> (de 15 à 0)</td>
+
+          <td colspan="2" style="width:30%"><b>2e série</b> (négatifs)</td>
+        </tr>
+        <tr>
+          <td>V-E-2I-5G</td><td></td>
+          <td>V-E-2I-5G</td><td></td>
+          <td>V-E-2I-5G</td><td></td>
+
+        </tr>
+        <tr>
+          <td>de 0 à 4</td><td>+1</td>
+          <td>de 0 à 7</td><td>+1</td>
+          <td>de 0 à 9</td><td>+1</td>
+        </tr>
+
+        <tr>
+          <td>de 5 à 9</td><td>+2</td>
+          <td>de 8 à 14</td><td>+2</td>
+          <td>de 10 à 19</td><td>+2</td>
+        </tr>
+        <tr>
+
+          <td>de 10 à 14</td><td>+3</td>
+          <td>de 15 à 22</td><td>+3</td>
+          <td>de 20 à 24</td><td>+3</td>
+        </tr>
+        <tr>
+          <td>de 15 à 19</td><td>+4</td>
+
+          <td>de 23 à 29</td><td>+4</td>
+          <td>de 25 à 29</td><td>+4</td>
+        </tr>
+        <tr>
+          <td>de 20 à 24</td><td>+5</td>
+          <td>de 30 à 39</td><td>+5</td>
+
+          <td>de 30 à 34</td><td>+5</td>
+        </tr>
+        <tr>
+          <td>25 et plus</td><td>+6</td>
+          <td>40 et plus</td><td>+6</td>
+          <td>de 35 à 44</td><td>+6</td>
+
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td colspan="2"></td>
+          <td>45 et plus</td><td>+7</td>
+        </tr>
+      </table>
+
+    <!-- section #3 -->
+    <h3>3- Barème de simple</h3>
+      <table style="width:50%" summary="Barème de simple">
+      <thead>
+        <tr>
+          <th scope="col" style="width:75%">Victoire</th>
+          <th scope="col">Points</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Victoire à 2 échelons et plus au dessus</td><td style="text-align:right">+150 points</td></tr>
+        <tr><td>Victoire à 1 échelon au dessus</td><td style="text-align:right">+100 points</td></tr>
+        <tr><td>Victoire à échelon égal</td><td style="text-align:right">+50 points</td></tr>
+
+        <tr><td>Victoire à 1 échelon en dessous</td><td style="text-align:right">+30 points</td></tr>
+        <tr><td>Victoire à 2 échelons en dessous</td><td style="text-align:right">+20 points</td></tr>
+        <tr><td>Victoire à 3 échelons en dessous</td><td style="text-align:right">+15 points</td></tr>
+        <tr><td>Victoire à 4 échelons et plus en dessous</td><td style="text-align:right">0 points</td></tr>
+      </tbody>
+
+      </table>
+      <ul>
+        <li><strong>Forfait</strong> : 
+          <br />- à partir du troisième, chaque w.o. est considéré comme une défaite à deux échelons inférieurs.
+          <br />- à partir du cinquième w.o., le classement harmonisé est descendu d'un échelon par rapport au classement calculé.
+        </li>
+        <li><strong>Bonification</strong> : par partie gagnée en championnats individuels jeunes, seniors et seniors plus
+         dans les championnats régionaux de Ligue y compris dans les phases départementales disputées par élimination directe : <b>+15 points</b>. Bonification plafonnée à 45 points (3 victoires).</li>
+
+        <li><strong>Bonification</strong> : en cas d'absence de défaite <em>significative</em>, c'est-à-dire à échelon inférieur ou égal, attribuée à partir de 30/3 et pour un minimum de 10 matches (défaites par "wo" exclues) : en 4e série : <strong>+50 points</strong>, en 3e ou 2e série : <strong>+100 points</strong>.</li>
+      </ul>
+
+
+    <!-- section #4 -->
+
+    <h3>4- Formats courts</h3>
+      <ul>
+        <li>Les matchs en format court concernent exclusivement <strong>les NC et les 4e séries.</strong></li>
+        <li>Le calcul du classement prend en compte les nouveaux formats et applique les coefficients pondérateurs suivants :</li>
+      </ul>
+
+    <table style="width:60%" summary="Formats courts">
+
+      <thead>
+        <tr>
+          <th scope="col" style="width:70%">Formats</th>
+          <th scope="col" style="text-align:center">Coefficients</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Format C et D :</strong> 3 sets à 4 jeux - jeux décisif à 4/4</td><td style="text-align:center">0.6</td></tr>
+
+        <tr><td><strong>Format E et F :</strong> 3 sets à 3 jeux - jeux décisif à 2/2</td><td style="text-align:center">0.4</td></tr>
+        <tr><td><strong>Format G :</strong> 3 jeux décisifs</td><td style="text-align:center">0.2</td></tr>
+       </tbody>
+      </table>
+
+      <ul>
+      <li><strong>Nombre de meilleurs victoires prises en compte :</strong>
+         <br />Les meilleurs victoires prises en compte sont sélectionnées selon les échelons.
+         <br />Le nombre de victoires prises en compte est déterminé en additionnant les coefficients pondérateurs pour obtenir le nombre de "victoires pleines".
+      </li>
+      <li><strong>Victoires supplémentaires prises en compte :</strong>
+         <br />Le décompte du V, du E, du I et du G pour obtenir le résultat du V-E-2I-5G doit se faire en fonction du coefficient. 
+         <br />Le résultat obtenu sera un multiple de 0.2. Si la décimale de la différence V-E-2I-5G est : 
+         <br />- 0.2 ou 0.4 : il faut arrondir le résultat à l'unité inférieure; <br />- 0.6 ou 0.8 : il faut arrondir le résultat à l'unité supérieure; 
+      </li>
+
+      </ul>
+
+
+    <!-- section #5 -->
+    <h3>5- Normes de maintien</h3>
+
+      <p>Pour accéder ou se maintenir à l’échelon, il faut avoir le nombre de points nécessaire à l’échelon.</p>
+      <table class="normes">
+        <tr><th>ECHELON</th></tr>
+
+        <tr><td>&nbsp;</td></tr><tr><td>NC</td></tr><tr><td>40</td></tr><tr><td>30/5</td></tr><tr><td>30/4</td></tr><tr><td>30/3</td></tr><tr><td>30/2</td></tr><tr><td>30/1</td></tr><tr><td>30</td></tr><tr><td>15/5</td></tr><tr><td>15/4</td></tr><tr><td>15/3</td></tr><tr><td>15/2</td></tr><tr><td>15/1</td></tr><tr><td>15</td></tr><tr><td>5/6</td></tr><tr><td>4/6</td></tr><tr><td>3/6</td></tr><tr><td>2/6</td></tr><tr><td>1/6</td></tr><tr><td>0</td></tr><tr><td>-2/6</td></tr><tr><td>-4/6</td></tr><tr><td>-15</td></tr><tr><td>-30</td></tr><tr><td>Promotion</td></tr>
+
+      </table>
+      <table class="normes" summary="normes de montée, maintien et descente pour le classement féminin">
+      <thead>
+        <tr><th>CLASSEMENT FEMININ</th></tr>
+        <tr><td><strong>Maintien</strong></td></tr>
+      </thead>
+      <tbody>
+        <tr><td>-</td></tr>
+
+        <tr><td>6 et plus</td></tr>
+        <tr><td>50 et plus</td></tr>
+        <tr><td>90 et plus</td></tr>
+        <tr><td>145 et plus</td></tr>
+        <tr><td>185 et plus</td></tr>
+        <tr><td>235 et plus</td></tr>
+
+        <tr><td>280 et plus</td></tr>
+        <tr><td>330 et plus</td></tr>
+        <tr><td>380 et plus</td></tr>
+        <tr><td>430 et plus</td></tr>
+        <tr><td>530 et plus</td></tr>
+        <tr><td>570 et plus</td></tr>
+
+        <tr><td>630 et plus</td></tr>
+        <tr><td>650 et plus</td></tr>
+        <tr><td>730 et plus</td></tr>
+        <tr><td>830 et plus</td></tr>
+        <tr><td>940 et plus</td></tr>
+        <tr><td>1000 et plus</td></tr>
+
+        <tr><td>1100 et plus</td></tr>
+        <tr><td>1200 et plus</td></tr>
+        <tr><td>1350 et plus</td></tr>
+        <tr><td>1450 et plus</td></tr>
+        <tr><td>1650 et plus</td></tr>
+        <tr><td>1695 et plus</td></tr>
+
+      </tbody>
+      </table>
+      <table class="normes" summary="normes de montée, maintien et descente pour le classement masculin">
+      <thead>
+        <tr><th>CLASSEMENT MASCULIN</th></tr>
+        <tr><td><strong>Maintien</strong></td></tr>
+      </thead>
+      <tbody>
+
+        <tr><td>-</td></tr>
+        <tr><td>6 et plus</td></tr>
+        <tr><td>50 et plus</td></tr>
+        <tr><td>90 et plus</td></tr>
+        <tr><td>145 et plus</td></tr>
+        <tr><td>205 et plus</td></tr>
+
+        <tr><td>245 et plus</td></tr>
+        <tr><td>290 et plus</td></tr>
+        <tr><td>325 et plus</td></tr>
+        <tr><td>395 et plus</td></tr>
+        <tr><td>465 et plus</td></tr>
+        <tr><td>525 et plus</td></tr>
+
+        <tr><td>565 et plus</td></tr>
+        <tr><td>660 et plus</td></tr>
+        <tr><td>700 et plus</td></tr>
+        <tr><td>730 et plus</td></tr>
+        <tr><td>820 et plus</td></tr>
+        <tr><td>900 et plus</td></tr>
+
+        <tr><td>930 et plus</td></tr>
+        <tr><td>1070 et plus</td></tr>
+        <tr><td>1240 et plus</td></tr>
+        <tr><td>1390 et plus</td></tr>
+        <tr><td>1510 et plus</td></tr>
+        <tr><td>1580 et plus</td></tr>
+
+        <tr><td>1750 et plus</td></tr>
+      </tbody>
+      </table>
+  </div>
+
+  <h3>Classement de double</h3>
+  <p>À l'issue de l'année sportive 2002, le Bureau fédéral, sur proposition de la
+  Commission fédérale de classement, a décidé de supprimer le calcul de
+  classement de double et de revenir à un classement de double identique au
+  classement de simple (à l'exception des joueurs ayant un classement de
+  double négatif).</p>  </section><!-- /#content -->
+</body>
+</html>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+ 
+	<!-- Saisie du nom -->
+	
+    <TextView android:id="@+id/TextViewNomEpreuve"
+   	android:layout_width="fill_parent"
+   	android:layout_height="wrap_content"
+   	android:text="@string/nomEpreuve"
+   	/>
+
+   	 <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+	    <EditText android:id="@+id/EditTextNomEpreuve"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+	    	android:hint="@string/nomEpreuveHint"
+	    	/>
+	</LinearLayout>
+	
+	<!-- Saisie du type de l'épreuve -->
+   	
+    <TextView android:id="@+id/TextViewTypeEpreuve"
+   	android:layout_width="fill_parent"
+   	android:layout_height="wrap_content"
+   	android:text="@string/typeEpreuve"
+   	/>
+
+   	 <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+	     <Spinner android:id="@+id/SpinnerTypeEpreuve"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    	 />
+	</LinearLayout>
+ 
+	 
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+			<!-- Bouton VALIDER -->
+    		<Button android:id="@+id/ButtonEpreuveValider"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/boutonValider"
+    			/>
+    		<!-- Bouton ANNULER -->
+    		<Button android:id="@+id/ButtonEpreuveAnnuler"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/boutonAnnuler"
+    			/>
+    </LinearLayout>
+    	
+    <!-- Message de confirmation de création -->
+    
+   	<TextView android:id="@+id/TextViewConfirm"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center_horizontal"
+	    android:textSize="@dimen/dimMessage"
+	    android:textColor="@color/couleurMessage"
+	    />
+ 
+</LinearLayout>

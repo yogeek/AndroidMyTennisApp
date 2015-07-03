@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    >
+ 
+	<!-- Saisie du nom de l'adversaire -->
+	
+    <TextView android:id="@+id/TextViewNomAdversaire"
+   		android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:text="@string/nomAdversaire"
+   	/>
+
+   	 <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+		    <EditText android:id="@+id/EditTextNomAdversaire"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:layout_gravity="bottom"
+			   	android:hint="@string/nomAdversaireHint"
+		   	/>
+   	</LinearLayout>
+   	
+   	<!-- Saisie du prénom de l'adversaire -->
+
+    <TextView android:id="@+id/TextViewPrenomAdversaire"
+   		android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:text="@string/prenomAdversaire"
+   	/>
+
+   	 <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+		    <EditText android:id="@+id/EditTextPrenomAdversaire"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:layout_gravity="bottom"
+			   	android:hint="@string/prenomAdversaireHint"
+		   	/>
+   	</LinearLayout>
+   	
+   	<!-- Saisie du classement de l'adversaire-->
+   	
+    <TextView android:id="@+id/TextViewClassement"
+   	android:layout_width="fill_parent"
+   	android:layout_height="wrap_content"
+   	android:text="@string/classementAdversaire"
+   	/>
+
+   	 <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+	     <Spinner android:id="@+id/SpinnerClassement"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    	 />
+	</LinearLayout>
+	
+	<!-- Choix de l'épreuve -->
+	
+	<TextView android:id="@+id/TextViewEpreuve"
+	   	android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content"
+	   	android:text="@string/choixEpreuve"
+   	/>
+		
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+	     <Spinner android:id="@+id/SpinnerEpreuve"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    	 />
+	</LinearLayout>
+	
+	<!-- Choix du format de la rencontre -->
+	
+	<TextView android:id="@+id/TextViewFormatRencontre"
+	   	android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content"
+	   	android:text="@string/choixFormatRencontre"
+   	/>
+		
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+	     <Spinner android:id="@+id/SpinnerFormat"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    	 />
+	</LinearLayout>
+	
+	
+	<!-- Victoire ou défaite ? -->
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+			<ToggleButton android:id="@+id/ToggleVictoire"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textOn="@string/toggleVictoire"
+		        android:textOff="@string/toggleDefaite"
+		        android:layout_gravity="center_vertical"
+		    />
+		        
+        	<!-- Saisie de la date de la rencontre -->
+        	<!-- focusable=false pour éviter l'affichage du clavier quand le focus est sur le champ, ce qui est le comportement standard -->
+		   	<EditText android:id="@+id/EditTextDate"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:focusable="false"
+			   	android:hint="@string/boutonDate"
+		   	/>
+		        
+    </LinearLayout>
+	 
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+			<!-- Bouton VALIDER -->
+    		<Button android:id="@+id/ButtonEpreuveValider"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/boutonValider"
+    			/>
+    		<!-- Bouton ANNULER -->
+    		<Button android:id="@+id/ButtonEpreuveAnnuler"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/boutonAnnuler"
+    			/>
+    </LinearLayout>
+    	
+    <!-- Message de confirmation de création -->
+    
+   	<TextView android:id="@+id/TextViewConfirm"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center_horizontal"
+	    android:textSize="@dimen/dimMessage"
+	    android:textColor="@color/couleurMessage"
+	    />
+ 
+</LinearLayout>

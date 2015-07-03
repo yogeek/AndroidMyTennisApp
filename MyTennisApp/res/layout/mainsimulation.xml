@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    >
+    
+  	<TextView
+		android:id="@+id/classementCalcule"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="35px"
+		android:textStyle="bold"
+		android:textColor="#000000"
+		/>
+		
+	<TextView
+		android:id="@+id/victoiresRetenues"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="30px"
+		android:textStyle="bold"
+		android:textColor="#000000"
+		/>
+
+    
+    <!-- Liste des victoires retenues -->
+    <ListView
+        android:id="@+id/listviewvictoiresretenues"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:cacheColorHint="#00000000"
+        android:textColor="#000000"
+      />
+      
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    >
+		    <!-- Bouton SIMULATION -->
+			<Button android:id="@+id/ButtonSimulationValider"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/boutonValider"
+				/>
+			<!-- Bouton ANNULER -->
+			<Button android:id="@+id/ButtonSimulationAnnuler"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/boutonAnnuler"
+				/>
+	</LinearLayout>
+		
+</LinearLayout>

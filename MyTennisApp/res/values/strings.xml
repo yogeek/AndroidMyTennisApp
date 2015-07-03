@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">My Tennis App</string>
+	<string name="choixProfil">Choisir un profil :</string>
+	<string name="prenom">Entrez votre prénom : </string>
+	<string name="prenomHint">Tapez votre prénom</string>
+	<string name="nom">Entrez votre nom : </string>
+	<string name="nomHint">Tapez votre nom</string>
+	<string name="classement">Choisissez votre classement : </string>
+	<string name="anneeNaissance">Choisissez votre année de naissance : </string>
+	<string name="nomEpreuve">Nom de l\'épreuve : </string>
+	<string name="nomEpreuveHint">Tapez le nom de l\'épreuve</string>
+	<string name="typeEpreuve">Choisissez le type de l\'épreuve : </string>
+	<string name="nomAdversaire">Nom de l\'adversaire : </string>
+	<string name="nomAdversaireHint">Tapez le nom de l\'adversaire</string>
+	<string name="prenomAdversaire">Prénom de l\'adversaire : </string>
+	<string name="prenomAdversaireHint">Tapez le prénom de l\'adversaire</string>
+	<string name="classementAdversaire">Choisissez le classement de l\'adversaire : </string>
+	<string name="choixEpreuve">Choisissez l\'épreuve : </string>
+	<string name="choixFormatRencontre">Choisissez le format : </string>
+	<string name="boutonDate">Date de la rencontre</string>
+	<string name="dateRencontre">Date</string>
+	<string name="palmares_no_item">Aucune rencontre enregistrée</string>
+	<string name="toggleVictoire">Victoire</string>
+	<string name="toggleDefaite">Défaite</string>
+	<string name="boutonValider">Valider</string>
+	<string name="boutonModifier">Modifier</string>
+	<string name="boutonAnnuler">Annuler</string>
+	<string name="boutonSimulation">Simuler le futur classement</string>
+	<string name="boutonRetour">Retour</string>
+	<string name="classementCalcule">Classement calculé :</string>
+	<string name="victoiresRetenues">Victoires retenues</string>
+	<string name="reglesCalculFileName">regles_calcul.htm</string>
+</resources>

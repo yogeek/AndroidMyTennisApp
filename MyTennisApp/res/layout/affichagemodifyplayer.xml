@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+ 
+ 	<!-- Saisie du prénom -->
+ 
+    <TextView android:id="@+id/TextViewPrenom"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/prenom"
+    	/>
+ 
+   	 <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+	    <EditText android:id="@+id/EditTextPrenom"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+	    	android:hint="@string/prenomHint"
+	    	/>
+	</LinearLayout>
+	
+	<!-- Saisie du nom -->
+	
+    <TextView android:id="@+id/TextViewNom"
+   	android:layout_width="fill_parent"
+   	android:layout_height="wrap_content"
+   	android:text="@string/nom"
+   	/>
+
+   	 <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+	    <EditText android:id="@+id/EditTextNom"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+	    	android:hint="@string/nomHint"
+	    	/>
+	</LinearLayout>
+	
+	<!-- Saisie du classement -->
+   	
+    <TextView android:id="@+id/TextViewClassement"
+   	android:layout_width="fill_parent"
+   	android:layout_height="wrap_content"
+   	android:text="@string/classement"
+   	/>
+
+   	 <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+	     <Spinner android:id="@+id/SpinnerClassement"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    	 />
+	</LinearLayout>
+	
+	<!-- Saisie de l'année de naissance -->
+   	
+    <TextView android:id="@+id/TextViewNaissance"
+   	android:layout_width="fill_parent"
+   	android:layout_height="wrap_content"
+   	android:text="@string/anneeNaissance"
+   	/>
+
+   	 <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+	     <Spinner android:id="@+id/SpinnerNaissance"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    	 />
+	</LinearLayout>
+ 
+	 
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+			<!-- Bouton VALIDER -->
+    		<Button android:id="@+id/ButtonModifier"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/boutonModifier"
+    			/>
+    		<!-- Bouton ANNULER -->
+    		<Button android:id="@+id/ButtonAnnuler"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/boutonAnnuler"
+    			/>
+    </LinearLayout>
+    	
+    <!-- Message de confirmation de création -->
+    
+   	<TextView android:id="@+id/TextViewConfirm"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center_horizontal"
+	    android:textSize="@dimen/dimMessage"
+	    android:textColor="@color/couleurMessage"
+	    />
+ 
+</LinearLayout>

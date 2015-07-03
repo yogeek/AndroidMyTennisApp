@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    >
+    
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1.0"
+        android:textColor="#000000"
+        android:cacheColorHint="#00000000"
+      	/>
+    <TextView
+	    android:id="@+id/android:empty"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:text="@string/palmares_no_item"
+	    />
+      
+      <LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:gravity="center_horizontal"
+	    >
+      
+		    <!-- Bouton SIMULATION -->
+			<Button android:id="@+id/ButtonPalmaresSimulation"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/boutonSimulation"
+				/>
+			<!-- Bouton ANNULER -->
+			<Button android:id="@+id/ButtonPalmaresAnnuler"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/boutonRetour"
+				/>
+		
+		</LinearLayout>
+</LinearLayout>

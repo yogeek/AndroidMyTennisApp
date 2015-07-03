@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+ 
+    <ImageView
+		android:id="@+id/imgMatch"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	   	android:layout_gravity="center_vertical"
+	   	android:padding="30px"
+	   	android:layout_weight="1"
+		/>
+ 
+	 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	 	android:orientation="vertical"
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+		>
+		
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	 		android:orientation="horizontal"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+			>
+				<TextView android:id="@+id/nomAdversaire"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+		    		android:gravity="left"
+		    		android:textSize="20px"
+		    		android:textStyle="bold"
+	    		/>
+	    		<TextView android:id="@+id/pointsGagnes"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="20px"
+					android:gravity="right"
+		    		android:textSize="20px"
+		    		android:textStyle="bold"
+	    		/>
+	    </LinearLayout>
+		
+		<TextView
+			android:id="@+id/classementAdversaire"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:textSize="20px"
+			android:textStyle="bold"
+			/>
+	</LinearLayout>
+ 
+</LinearLayout>
